@@ -1,4 +1,51 @@
-#git_tab{
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+}
+header{
+    color: white;
+    padding: 40px;
+    background: #1f2242;
+}
+#git_tab {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 43px 10%;
+}
+
+.git_column {
+    display: grid;
+    grid-template-columns: 1FR 1FR;
+    justify-content: center;
+}
+
+span {
+    padding: 22px;
+    border: 1px solid;
+}
+
+footer{
+    height: 10vh;
+    background: #1f2242;
+    text-align: center;
+    padding: 30px;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 2%;
+    padding: 30px;
+}
+footer a:hover{
+    transition: ease-out 0.5s;
+    color:#1f2242 ;
+    background: white;
 }

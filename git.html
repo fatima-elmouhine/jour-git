@@ -8,14 +8,128 @@
     <title>Git Command</title>
 </head>
 <body>
-    <h1> Commande Git en ligne de commande</h1>
-    <section id="git_tab">
-       <div class="git_colum name">
-            Nom de commande
-       </div>
-       <div class="git_colum description">
-            Description
-       </div>
-    </section>
+    <main>
+        <header>
+            <h1> Commande Git en ligne de commande</h1>
+        </header>
+        <section id="git_tab">
+        <div class="git_column">
+                <h2>Nom de commande</h2>
+                <h2>Description</h2>
+
+                <span>git config --global user.name "[nom]"</span>
+                <span>Définit le nom que vous voulez associer à toutes vos opérations de commit</span>
+
+
+                <span>git config --global user.email "[adresse email]"</span>
+                <span>Définit l'email que vous voulez associer à toutes vos opérations de commit</span>
+
+
+                <span>git config --global color.ui auto</span>
+                <span>Active la colorisation de la sortie en ligne de commande</span>
+
+
+                <span> git init [nom-du-projet]</span>
+                <span>Crée un dépôt local à partir du nom spécifié</span>
+
+                <span>git clone [url]</span>
+                <span>Télécharge un projet et tout son historique de versions</span>
+
+                <span>git status</span>
+                <span>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</span>
+
+                <span>git diff</span>
+                <span>Montre les modifications de fichier qui ne sont pas encore indexées</span>
+
+                <span>git add [fichier]</span>
+                <span>Ajoute un instantané du fichier, en préparation pour le suivi de version</span>
+
+                <span>git diff --staged</span>
+                <span>Montre les différences de fichier entre la version indexée et la dernière
+                    version</span>
+
+                <span>git reset [fichier]</span>
+                <span>Enleve le fichier de l'index, mais conserve son contenu</span>
+
+                <span>git commit -m "[message descriptif]"</span>
+                <span>Enregistre des instantanés de fichiers de façon permanente dans
+                    l'historique des versions</span>
+
+                <span>git branch</span>
+                <span>Liste toutes les branches locales dans le dépôt courant</span>
+
+                <span>git branch [nom-de-branche]</span>
+                <span>Crée une nouvelle branche</span>
+
+                <span>git checkout [nom-de-branche]</span>
+                <span>Bascule sur la branche spécifiée et met à jour le répertoire de travail</span>
+
+                <span>git merge [nom-de-branche]</span>
+                <span>Combine dans la branche courante l'historique de la branche spécifiée</span>
+
+
+                <span>git branch -d [nom-de-branche]</span>
+                <span>Supprime la branche spécifiée</span>
+
+
+                <span>git rm [fichier]</span>
+                <span>Supprime le fichier du répertoire de travail et met à jour l'index</span>
+
+
+                <span>git rm --cached [fichier]</span>
+                <span>Supprime le fichier du système de suivi de version mais le préserve
+                    localement </span>
+
+                <span>git mv [fichier-nom] [fichier-nouveau-nom]</span>
+                <span>Renomme le fichier et prépare le changement pour un commit</span>
+
+                <span>*.log <br>
+                    build/<br>
+                    temp-*</span>
+                <span>Un fichier texte nommé .gitignore permet d'éviter le suivi de
+                    version accidentel pour les fichiers et chemins correspondant aux
+                    paerns spécifiés</span>
+
+                <span> git ls-files --other --ignored --exclude-standard</span>
+                <span>Liste tous les fichiers exclus du suivi de version dans ce projet</span>
+
+                <span>git stash</span>
+                <span>Enregistre de manière temporaire tous les fichiers sous suivi de version
+                    qui ont été modifiés ("remiser son travail")</span>
+                <span>git stash pop</span>
+                <span>Applique une remise et la supprime immédiatement</span>
+
+                <span>git stash list</span>
+                <span>Liste toutes les remises</span>
+                <span>git stash drop</span>
+                <span>Supprime la remise la plus récente</span>
+                <span>git log</span>
+                <span>Montre l'historique des versions pour la branche courante</span>
+                <span> git log --follow [fichier]</span>
+                <span>Montre l'historique des versions, y compris les actions de renommage, pour le fichier spécifié</span>
+                <span>git diff [premiere-branche]...[deuxieme-branche]</span>
+                <span>Montre les différences de contenu entre deux branches</span>
+                <span>git show [commit]</span>
+                <span>Montre les modifications de métadonnées et de contenu inclues dans le commit spécifié</span>
+                <span>git reset [commit]</span>
+                <span>Annule tous les commits après `[commit]`, en conservant les
+                    modifications localement</span>
+                <span>git reset --hard [commit]</span>
+                <span>Supprime tout l'historique et les modifications effectuées après le
+                    commit spécifié</span>
+                <span>git fetch [nom-de-depot]</span>
+                <span>Récupère tout l'historique du dépôt nommé</span>
+                <span>git merge [nom-de-depot]/[branche]</span>
+                <span>Fusionne la branche du dépôt dans la branche locale courante</span>
+                <span>git push [alias] [branche]</span>
+                <span>Envoie tous les commits de la branche locale vers GitHub</span>
+                <span>git pull</span>
+                <span>Récupère tout l'historique du dépôt nommé et incorpore les modifications</span>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://training.github.com/downloads/fr/github-git-cheat-sheet.pdf"> Lien vers le pdf afin de le telecharger </a></p>
+    </footer>
 </body>
 </html>
